@@ -25,13 +25,34 @@
   </head>
   <body>
     <div class="page">
-      testando
-      <header class="header"></header>
+      <header class="header">
+        <img
+          src="./images/logo_coffeeshop_dark.svg"
+          alt="Logo Triple Espresso"
+          class="logo"
+        />
+
+        <nav class="nav">
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a href="#recipes" class="nav__link">Receitas</a>
+            </li>
+            <li class="nav__item">
+              <a href="#reservation" class="nav__link">Reservar uma mesa</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link">Contatos</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
       <main class="content">
-        <section class="recipes"></section>
-        <section class="reservation"></section>
+        <section id="recipes" class="recipes"></section>
+        <section id="reservation" class="reservation"></section>
       </main>
-      <footer class="footer"></footer>
+
+      <footer id="contacts" class="footer"></footer>
     </div>
   </body>
 </html>
