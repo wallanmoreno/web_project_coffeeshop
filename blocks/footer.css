@@ -1,9 +1,9 @@
 .footer {
+  position: relative; /* ← adiciona isso */
   padding: 60px 80px;
   background-color: #0a2850;
   color: #ffffff;
 }
-
 .footer__content {
   display: flex;
   justify-content: space-between;
@@ -33,12 +33,14 @@
 }
 
 .footer__link {
+  display: flex;
+  align-items: center;
   color: #ffffff;
   text-decoration: none;
 }
 
 .footer__link:hover {
-  opacity: 0.7;
+  color: #c1c1c1;
 }
 
 .footer__copyright {
@@ -46,4 +48,21 @@
   text-align: center;
   font-family: "Inter", Arial, sans-serif;
   font-size: 14px;
+}
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.footer__circle {
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  width: 340px;
+  height: 340px;
+  background-color: #2f80ed;
+  border-radius: 50%;
+  z-index: 0;
 }

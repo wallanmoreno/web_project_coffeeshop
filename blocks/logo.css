@@ -10,4 +10,6 @@
 .logo_place_footer {
   width: 105px;
   height: 39px;
+  position: relative;
+  z-index: 1;
 }
