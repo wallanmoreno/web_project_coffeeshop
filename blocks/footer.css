@@ -9,7 +9,7 @@
 .footer__content {
   display: flex;
   justify-content: space-between;
-  min-height: 240px;
+  height: 240px;
   position: relative;
   z-index: 1;
 }
@@ -81,8 +81,8 @@
 
 .footer__copyright {
   position: absolute;
-  left: 80px;
-  bottom: 60px;
+  left: 0;
+  bottom: 0;
   margin: 0;
 
   font-family: "Inter", Arial, sans-serif;
