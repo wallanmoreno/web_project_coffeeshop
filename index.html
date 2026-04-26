@@ -111,7 +111,72 @@
           </div>
         </section>
 
-        <section id="reservation" class="reservation"></section>
+        <section id="reservation" class="reservation">
+          <h2 class="reservation__title">Reservar uma mesa</h2>
+
+          <form class="form reservation__form">
+            <fieldset class="form__fieldset">
+              <label class="form__label">
+                Nome *
+                <input
+                  type="text"
+                  class="form__input"
+                  name="name"
+                  placeholder="Nome"
+                  required
+                />
+              </label>
+
+              <label class="form__label">
+                Número de convidados *
+                <input
+                  type="number"
+                  class="form__input"
+                  name="number"
+                  placeholder="1-8"
+                  min="1"
+                  max="8"
+                  required
+                />
+              </label>
+
+              <label class="form__label">
+                Data e hora *
+                <input
+                  type="datetime-local"
+                  class="form__input"
+                  name="datetime"
+                  required
+                />
+              </label>
+
+              <label class="form__label">
+                Seu e-mail *
+                <input
+                  type="email"
+                  class="form__input"
+                  name="email"
+                  placeholder="email@email.com"
+                  required
+                />
+              </label>
+
+              <button type="submit" class="form__button">
+                Reservar uma mesa
+              </button>
+
+              <label class="form__label form__label_type_checkbox">
+                <input
+                  type="checkbox"
+                  class="form__checkbox"
+                  name="terms"
+                  required
+                />
+                Eu concordo com os termos de uso
+              </label>
+            </fieldset>
+          </form>
+        </section>
       </main>
 
       <footer id="contacts" class="footer"></footer>
